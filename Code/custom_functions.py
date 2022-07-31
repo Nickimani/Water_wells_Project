@@ -124,3 +124,26 @@ def barPlot(dataframe, column):
     ax.set_xlabel(column)
     ax.set_ylabel('Count')
     ax.set_title(f'A bargraph of {column}.');
+    
+    
+# A function that returns min and max values 
+def min_max(dataframe, column):
+    """
+    Returns the min and max of a numeric column in a dataframe
+    """
+    minimum = dataframe[column].min()
+    maximum = dataframe[column].max()
+    
+    return (minimum, maximum)
+
+
+
+# A function for grouping
+def groupby_counts(dataframe, grouping_column, count_column):
+    """
+    Takes in a dataframe, grouping column and counting column. 
+    Returns the counts of values in the counting column after grouping with the grouping column.
+    """
+    grouped_data = dataframe.groupby(by=grouping_column)[count_column].value_counts(normalize=True)
+    
+    return grouped_data

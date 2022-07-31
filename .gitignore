@@ -3,3 +3,9 @@
 
 # ignore __pycache__ folder
 __pycache__
+
+# ignore the test and submission format files from the site
+real world test.csv
+Submission Format.csv
+
+

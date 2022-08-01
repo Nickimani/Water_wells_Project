@@ -1,6 +1,6 @@
 # Water_wells_Project
 
-__*by Nick Kimani*__
+*by: __Nick Kimani__*
 
 # Repo structure
 
@@ -16,8 +16,11 @@ __*by Nick Kimani*__
 ├── Images                          # Contains all images used or produced in this project
 │   ├── Images produced from the notebooks e.g Confusion matrix of extraction_type_class and status_group.png
 │   ├── Images imported for use in the notebooks e.g water_wells.png
+├── Proj 3 Alt.pdf                  # Project Presentation file
 └── README.md
 ```
+
+[Link to the presentation file.](https://github.com/Nickimani/Water_wells_Project/blob/main/Proj%203%20Alt.pdf)
 
 # Problem Understanding
 
@@ -108,5 +111,3 @@ The __final model__ I used is a __random forest ensemble__. It had an average ac
 ![final_model_class_accuracy](https://user-images.githubusercontent.com/104377216/182044377-ccae2091-1cbf-4066-9623-477e5a315162.png)
 
 However, when __breaking down__ the above score, the accuracy when predicting the __majority class__ (functional) is __~92%__ and that for the __non functional__ class (not minority) is __~72%__. Considering that some potentially useful features were dropped due to some reasons I point out in the notebook, this accuracies are good enough to justify applying the model.
-
-    
